@@ -1,0 +1,18 @@
+<div #container class="form-group auto-complete-container">
+  <input
+    #text
+    (keyup)="onInputChange(text.value, $event)"
+    (keydown)="inputElKeyHandler($event)"
+    type="text"
+    class="form-control"
+    [placeholder]="placeHolder"
+    name="text2">
+  <ul class="auto-complete-data-container list-group" *ngIf="!isSuggestionHidden">
+    <li
+      (click)="onChangeText(item)"
+      class="list-group-item"
+      (mousedown)="doThat()"
+      [class.active-grey]="selecteItemIndex === i"
+      *ngFor="let item of suggestions; let i = index ">{{item}}</li>
+  </ul>
+</div>
