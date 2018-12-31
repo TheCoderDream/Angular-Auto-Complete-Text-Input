@@ -1,3 +1,5 @@
+![alt text](https://github.com/TheCodersDream/Angular-Auto-Complete-Text-Input/blob/master/auto_complete.gif)
+
 # AutoComplete
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
